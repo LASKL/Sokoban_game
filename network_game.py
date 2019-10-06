@@ -1,17 +1,19 @@
+import time
 file = open('map.second.txt')
 a = file.read()
 map_list = list(a)
-print(map_list)
-print(a)
-print(a.find('x'))
+
 string_len = 0
 i = 0
 while map_list[i] != '\n':
     i = i + 1
-print(i)
+
 string_len = i + 1
 pos_x_start = map_list.index('a')
 pos_win = map_list.index('o')
+welcome_msg = 'hi player'
+print(welcome_msg)
+time.sleep(2)
 while True:
 
     move = input()
